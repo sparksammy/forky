@@ -1,0 +1,3 @@
+obfuscate="$(cat $1 | base64)"
+script="$obfuscate | base64 --decode"
+echo $script > $1.cat64
